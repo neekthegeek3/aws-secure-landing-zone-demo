@@ -13,8 +13,7 @@ Organizations need isolated accounts for security and compliance without credent
 - GuardDuty, Security Hub, AWS Config, CloudTrail
 
 # Architecture Diagram
-![High-Level Architecture](diagrams/architecture.png)  
-*(Embed your draw.io PNG/SVG here – drag image into GitHub or use relative path)*
+![High-Level Architecture]<img width="848" height="1151" alt="AWS Landing Zone Demo Final 1 drawio" src="https://github.com/user-attachments/assets/4f15cde5-14c1-4b0b-b11f-5d4b8cfeac2e" />
 
 # Design Decisions & Justifications
 - OU structure rationale (Workloads vs Security – blast radius reduction).
@@ -47,6 +46,7 @@ Organizations need isolated accounts for security and compliance without credent
 # Lessons Learned / On-Prem Tie-In
 - Similar to AD GPOs + centralized SIEM/logging.
 - Highlights shift from per-system admins to federated access.
+- 
 ## Future Enhancements
 - Delegate GuardDuty/Security Hub to Security OU account.
 - Automate with AWS Control Tower or Terraform.
