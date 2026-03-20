@@ -1,0 +1,21 @@
+{
+  "Version": "2012-10-17",
+  "Statement": [
+    {
+      "Sid": "DenyNonApprovedRegions",
+      "Effect": "Deny",
+      "NotAction": "ec2:DescribeRegions",
+      "Resource": "*",
+      "Condition": {
+        "StringNotEquals": {
+          "aws:RequestedRegion": ["us-east-1", "us-west-2"]
+        }
+      }
+    }
+  ]
+}
+
+
+
+
+NAME: RestrictRegions
